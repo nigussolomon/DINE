@@ -6,10 +6,12 @@
 
 body{
     background: fixed url('back.png');
+    background-position: center;
+    background-size: cover;
 }
 
 .navigationMenu{
-    background: rgb(255, 39, 39);
+    background: rgb(255, 0, 0);
     padding: 1%;
     width: 98%;
     display: flex;
@@ -31,7 +33,7 @@ body{
 }
 .navigationLinks{
     display: flex;
-    width: 25%;
+    width: 28%;
     text-align: right;
     justify-content: space-evenly;
 }
@@ -46,7 +48,7 @@ body{
 .registrationLinks{
     padding-top: .3%;
     background: #111;
-    width: 55%;
+    width: 45%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -59,10 +61,12 @@ body{
 
 .register{
     position: absolute;
-    top: 10%;
-    left: 81%;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.253), rgba(17, 17, 17, 0.445));
+    top: 9.5%;
+    width: 24%;
+    left: 71.5%;
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.589), rgba(17, 17, 17, 0.336),rgba(255, 255, 255, 0.137));
     backdrop-filter: blur(5px);
+    border-radius: 10px;
     padding: 2%;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.438);
     font-weight: 600;
@@ -71,9 +75,11 @@ body{
 .login{
     position: absolute;
     top: 10%;
-    left: 81%;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.253), rgba(17, 17, 17, 0.445));
+    width: 24%;
+    left: 71.5%;
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.589), rgba(17, 17, 17, 0.336),rgba(255, 255, 255, 0.137));
     backdrop-filter: blur(5px);
+    border-radius: 10px;
     padding: 2%;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.438);
     font-weight: 600; 
@@ -95,10 +101,13 @@ form label{
 }
 
 form input{
+    width: 90%;
     margin-top: 4%;
     margin-bottom: 8%;
     padding: 2%;
     outline: none;
+    border-radius: 5px;
+    border: 0;
 }
 
 
@@ -132,8 +141,36 @@ form button{
 
 .redirect a{
     color: red;
-    font-weight: 300;
+    font-weight: 600;
 
+}
+
+.registerRestaurant{
+    margin-top: 8%;
+}
+
+.registerRestaurant a{
+    text-align: center;
+    width: 96%;
+    color: #fff;
+    font-weight: 900;
+    background: red;
+    padding: 3%;
+    text-decoration: none;
+}
+
+.loginToARestaurant{
+    margin-top: 8%;
+}
+
+.loginToARestaurant a{
+    text-align: center;
+    width: 96%;
+    color: #fff;
+    font-weight: 900;
+    background: red;
+    padding: 3%;
+    text-decoration: none;
 }
 
 .m-0 li{
@@ -141,4 +178,37 @@ form button{
     color: red;
     list-style-type: none;
     font-size: 12px;
+}
+
+.homeBody{
+    text-align: center;
+    width: 60%;
+    margin-top: 13%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.homeBody h1{
+    font-weight: 900;
+    font-size: 50px;
+    color: red;
+    padding: 1%;
+}
+
+.homeBody p{
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    color: #fff;
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+.homeBody a{
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 900;
+    background: red;
+    padding: 1.6%;
 }

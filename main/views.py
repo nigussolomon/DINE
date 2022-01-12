@@ -18,7 +18,7 @@ def register(request):
     else:
         form= Registration()
         formLogin=AuthenticationForm()
-    return render(request, 'main/register.html')
+    return render(request, 'main/home.html',{'form':form})
 
 
 

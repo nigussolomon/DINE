@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: fixed url('back.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.navigationMenu{
+    background: rgb(255, 0, 0);
+    padding: 1%;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 45%;
+    text-align: left;
+}
+.logo h1{
+    font-weight: 900;
+    color: #111;
+}
+
+.logo a{
+    color: #fff;
+    text-decoration: none;
+}
+.navigationLinks{
+    display: flex;
+    width: 28%;
+    text-align: right;
+    justify-content: space-evenly;
+}
+
+.navigationLinks a{
+    color: #111;
+    text-decoration: none;
+    padding-top: 2%;
+    font-weight: 600;
+}
+
+.registrationLinks{
+    padding-top: .3%;
+    background: #111;
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.registrationLinks a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.register{
+    position: absolute;
+    top: 9.5%;
+    width: 24%;
+    left: 71.5%;
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.589), rgba(17, 17, 17, 0.336),rgba(255, 255, 255, 0.137));
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 2%;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.438);
+    font-weight: 600;
+}
+
+.login{
+    position: absolute;
+    top: 10%;
+    width: 24%;
+    left: 71.5%;
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.589), rgba(17, 17, 17, 0.336),rgba(255, 255, 255, 0.137));
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 2%;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.438);
+    font-weight: 600; 
+}
+
+form span{
+    color: red;
+}
+
+form h1{
+    font-weight: 300;
+    margin-bottom: 10%;
+    color: #fff;
+}
+
+form label{
+    color: #fff;
+    font-weight: 300;
+}
+
+form input{
+    width: 90%;
+    margin-top: 4%;
+    margin-bottom: 8%;
+    padding: 2%;
+    outline: none;
+    border-radius: 5px;
+    border: 0;
+}
+
+
+form strong{
+    color: red;
+    font-size: 10px;
+}
+
+form button{
+    padding: 4%;
+    background: red;
+    color: #111;
+    font-weight: 600;
+    border: 0;
+    color: #fff;
+}
+
+#hint_id_username, #hint_id_password1, #hint_id_password2{
+    display: none;
+}
+
+.redirect{
+    margin-top: 3%;
+}
+
+.redirect p{
+    font-size: 13px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.redirect a{
+    color: red;
+    font-weight: 600;
+
+}
+
+.registerRestaurant{
+    margin-top: 8%;
+}
+
+.registerRestaurant a{
+    text-align: center;
+    width: 96%;
+    color: #fff;
+    font-weight: 900;
+    background: red;
+    padding: 3%;
+    text-decoration: none;
+}
+
+.loginToARestaurant{
+    margin-top: 8%;
+}
+
+.loginToARestaurant a{
+    text-align: center;
+    width: 96%;
+    color: #fff;
+    font-weight: 900;
+    background: red;
+    padding: 3%;
+    text-decoration: none;
+}
+
+.m-0 li{
+    margin-bottom: 8%;
+    color: red;
+    list-style-type: none;
+    font-size: 12px;
+}
+
+.homeBody{
+    text-align: center;
+    width: 60%;
+    margin-top: 13%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.homeBody h1{
+    font-weight: 900;
+    font-size: 50px;
+    color: red;
+    padding: 1%;
+}
+
+.homeBody p{
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    color: #fff;
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+.homeBody a{
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 900;
+    background: red;
+    padding: 1.6%;
+}

@@ -23,6 +23,7 @@
         </div>
         <div class="navigationLinks">
             <a href="{% url 'home' %}">HOME</a>
+            <a href="{% url 'login' %}">MENU</a>
             <div class="registrationLinks">
                 <a href="{% url 'register' %}" onclick="signup()">SIGN UP</a>
                 <a href="{% url 'login' %}" >SIGN IN</a>
@@ -31,7 +32,11 @@
     </section>
 
     <section class="homeBody">
-
+        <h1>Come and relax at our cafe.</h1>
+        <p>We have foods, drinks, fine music and even a place you can peacefully
+            read a book or magazine while listening to soothing music, 
+            well what are you waiting for come and see for yourself</p>
+        <a href="{% url 'login' %}">DINE WITH US</a>
     </section>
 
 

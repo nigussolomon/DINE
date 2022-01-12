@@ -1,0 +1,21 @@
+{% extends 'main/home.html' %}
+{% load crispy_forms_tags %}
+{% block register %}
+<div class="register" id="registerForm">
+    <form method="POST">
+        <h1>SIGN UP</h1>
+        {% csrf_token %}
+        {{form|crispy}}
+        <div class="submitButton">
+            <button type="submit" value="signup">SIGN UP</button>
+        </div>
+        <div class="redirect">
+            <p>IF YOU ALREADY HAVE AN ACCOUNT <a href="{% url 'login' %}"> SIGN IN</a></p>
+        </div>
+
+        <div class="registerRestaurant">
+            <a href="#">REGISTER A RESTAURANT</a>
+        </div>
+    </form>
+</div>
+{% endblock register %}

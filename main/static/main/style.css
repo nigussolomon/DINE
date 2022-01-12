@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: fixed url('back.png');
+}
+
+.navigationMenu{
+    background: rgb(255, 39, 39);
+    padding: 1%;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 45%;
+    text-align: left;
+}
+.logo h1{
+    font-weight: 900;
+    color: #111;
+}
+
+.logo a{
+    color: #fff;
+    text-decoration: none;
+}
+.navigationLinks{
+    display: flex;
+    width: 25%;
+    text-align: right;
+    justify-content: space-evenly;
+}
+
+.navigationLinks a{
+    color: #111;
+    text-decoration: none;
+    padding-top: 2%;
+    font-weight: 600;
+}
+
+.registrationLinks{
+    padding-top: .3%;
+    background: #111;
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.registrationLinks a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.register{
+    position: absolute;
+    top: 10%;
+    left: 81%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.253), rgba(17, 17, 17, 0.445));
+    backdrop-filter: blur(5px);
+    padding: 2%;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.438);
+    font-weight: 600;
+}
+
+.login{
+    position: absolute;
+    top: 10%;
+    left: 81%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.253), rgba(17, 17, 17, 0.445));
+    backdrop-filter: blur(5px);
+    padding: 2%;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.438);
+    font-weight: 600; 
+}
+
+form span{
+    color: red;
+}
+
+form h1{
+    font-weight: 300;
+    margin-bottom: 10%;
+    color: #fff;
+}
+
+form label{
+    color: #fff;
+    font-weight: 300;
+}
+
+form input{
+    margin-top: 4%;
+    margin-bottom: 8%;
+    padding: 2%;
+    outline: none;
+}
+
+
+form strong{
+    color: red;
+    font-size: 10px;
+}
+
+form button{
+    padding: 4%;
+    background: red;
+    color: #111;
+    font-weight: 600;
+    border: 0;
+    color: #fff;
+}
+
+#hint_id_username, #hint_id_password1, #hint_id_password2{
+    display: none;
+}
+
+.redirect{
+    margin-top: 3%;
+}
+
+.redirect p{
+    font-size: 13px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.redirect a{
+    color: red;
+    font-weight: 300;
+
+}
+
+.m-0 li{
+    margin-bottom: 8%;
+    color: red;
+    list-style-type: none;
+    font-size: 12px;
+}

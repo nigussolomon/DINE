@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static "main/style.css" %}">
+    <link rel="stylesheet" href="{% static "menu/style.css" %}">
     <title>Document</title>
 </head>
 <body>
     
-    {% block profile %}{% endblock profile %}
+    
 
     <section class="navigationMenu">
         <div class="logo">
@@ -24,19 +25,12 @@
             <a href="{% url 'home' %}">HOME</a>
             <a href="{% url 'login' %}">MENU</a>
             <div class="registrationLinks">
-                <a href="{% url 'register' %}" onclick="signup()">SIGN UP</a>
-                <a href="{% url 'login' %}" >SIGN IN</a>
+                <a href="{% url 'profile' %}">MY PROFILE</a>
             </div>
         </div>
     </section>
 
-    <section class="homeBody">
-        <h1>Come and relax at our cafe.</h1>
-        <p>We have foods, drinks, fine music and even a place you can peacefully
-            read a book or magazine while listening to soothing music, 
-            well what are you waiting for come and see for yourself</p>
-        <a href="{% url 'login' %}">DINE WITH US</a>
-    </section>
+    {% block profile %}{% endblock profile %}
 
 
 

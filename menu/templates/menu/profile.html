@@ -1,3 +1,26 @@
 {% extends 'menu/home.html' %}
+{% load crispy_forms_tags %}
 
-{% block profile %}{% endblock profile %}
+{% block profile %}
+<div class="profile">
+    <div class="details">
+        <h1>{{user.username}}'s <a href="">PROFILE</a></h1>
+        <h3>Username: <a href="#">@{{user.username}}</a></h3>
+        <h3>Phone Number: <a href="#">{{user.profile.phone_number}}</a></h3>
+        <h3>Address: <a href="#">{{user.profile.address}}</a></h3>
+    </div>
+</div>
+
+
+<div class="register" id="registerForm">
+    <form method="POST" enctype="multipart/form-data">
+        <h1>UPDATE YOUR PROFILE</h1>
+        {% csrf_token %}
+        {{userUpdate| crispy}}
+        {{addContact| crispy}}
+        <div class="submitButton">
+            <button type="submit" value="signup">UPDATE</button>
+        </div>
+    </form>
+</div>
+{% endblock profile %}

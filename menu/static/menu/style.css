@@ -1,0 +1,33 @@
+.profile{
+    margin: 3%;
+    width: 35%;
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.589), rgba(17, 17, 17, 0.336),rgba(255, 255, 255, 0.137));
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 2%;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.438);
+}
+.details h1{
+    color: white;
+    font-weight: 900;
+    cursor: default;
+    margin-bottom: 5%;
+}
+.details h1 a{
+    color: red;
+    text-decoration: none;
+    cursor: default;
+}
+.details h3{
+    color: white;
+}
+.details h3 a{
+    color: red;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+.register{
+    height: 82%;
+    border-radius: 0;
+}

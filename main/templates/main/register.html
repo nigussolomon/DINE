@@ -1,6 +1,8 @@
 {% extends 'main/home.html' %}
 {% load crispy_forms_tags %}
+{% load static %}
 {% block register %}
+<link rel="stylesheet" href="{% static "main/changes.css" %}">
 <div class="register" id="registerForm">
     <form method="POST">
         <h1>SIGN UP</h1>

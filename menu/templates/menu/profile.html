@@ -5,9 +5,13 @@
 <div class="profile">
     <div class="details">
         <h1>{{user.username}}'s <a href="">PROFILE</a></h1>
+        <hr>
         <h3>Username: <a href="#">@{{user.username}}</a></h3>
         <h3>Phone Number: <a href="#">{{user.profile.phone_number}}</a></h3>
         <h3>Address: <a href="#">{{user.profile.address}}</a></h3>
+    </div>
+    <div class="logoutButton">
+        <a href="{% url 'home' %}">LOGOUT</a>
     </div>
 </div>
 
@@ -22,5 +26,7 @@
             <button type="submit" value="signup">UPDATE</button>
         </div>
     </form>
+
+    <p id="notify">Your profile is only seen by you and hidden from other users!</p>
 </div>
 {% endblock profile %}

@@ -77,3 +77,10 @@
     padding: 1%;
     margin-right: 1%;
 }
+
+#gotomenu{
+    text-decoration: none;
+    color: red;
+    font-weight: 900;
+    margin-left: 3%;
+}

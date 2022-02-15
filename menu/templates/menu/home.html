@@ -22,8 +22,8 @@
             <h1>DI<a href="">NE</a></h1>
         </div>
         <div class="navigationLinks">
-            <a href="{% url 'home' %}">HOME</a>
-            <a href="{% url 'login' %}">MENU</a>
+            <a href="#">HOME</a>
+            <a href="#">MENU</a>
             <div class="registrationLinks">
                 <a href="{% url 'profile' %}">MY PROFILE</a>
             </div>
@@ -31,6 +31,7 @@
     </section>
 
     {% block profile %}{% endblock profile %}
+    {% block menu %}{% endblock menu %}
 
 
 

@@ -10,6 +10,9 @@
         <h3>Username: <a href="#">@{{user.username}}</a></h3>
         <h3>Phone Number: <a href="#">{{user.profile.phone_number}}</a></h3>
         <h3>Address: <a href="#">{{user.profile.address}}</a></h3>
+        <h3><a href="#">Restaurant Details</a></h3>
+        <h3>{{user.restaurant.restaurant_name}}</h3>
+        <h3>{{user.restaurant.phone_number}}</h3>
     </div>
     <div class="logoutButton">
         <a href="{% url 'home' %}">LOGOUT</a>
@@ -18,7 +21,7 @@
 
 <div class="options">
     <a href="#" id="updateBtn">UPDATE PROFILE</a>
-    <a href="#" id="addrestaurant">ADD A RESTAURANT</a>
+    <a href="#" id="addrestaurant">RESTAURANT</a>
 </div>
 
 
@@ -30,6 +33,20 @@
         {{addContact| crispy}}
         <div class="submitButton">
             <button type="submit" value="signup">UPDATE</button>
+        </div>
+    </form>
+
+    <p id="notify">Your profile is only seen by you and hidden from other users!</p>
+</div>
+
+<div class="register" id="restaurant">
+    <form method="POST" enctype="multipart/form-data">
+        <h1>ADD YOUR RESTAURANT</h1>
+        {% csrf_token %}
+        {{restaurant| crispy}}
+        <div class="submitButton">
+            <button type="submit" value="signup" id="up">UPDATE</button>
+            <a id = "gotomenu" href="{% url 'menuup' %}">GO TO MENU</a>
         </div>
     </form>
 

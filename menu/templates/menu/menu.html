@@ -1,0 +1,44 @@
+{% extends 'menu/home.html' %}
+
+{% block menu %}
+    <div class="wrap">
+        <div class="wrap1">
+            {% for x in user %}
+                {% if x.restaurant.restaurant_name == 'Enter Your Restaurant name' %}
+                {% else %}
+                <div class="resttitle" id="{{x.restaurant.restaurant_name}}">
+                    <h1>{{x.restaurant.restaurant_name}}</h1>
+                </div>
+                {% endif %}
+                    {% for y in food %}
+                        {% if x.restaurant.restaurant_name == y.restaurant.restaurant_name %}
+                                <div class="profile" id="menudisplay">
+                                    <div class="details">
+                                        <h3>FOOD: <a href="#">{{y.food_name}}</a></h3>
+                                        <h3>INGREDIENTS: <a href="#">{{y.food_ingridients}}</a></h3>
+                                        <h3>PRICE: <a href="#">{{y.food_price}}</a></h3>
+                                        <h3>RESTAURANT NAME: <a href="#">{{x.restaurant.restaurant_name}}</a></h3>
+                                        <h3>RESTAURANT PHONE: <a href="#">{{x.restaurant.phone_number}}</a></h3>
+                                
+                                    </div>
+                                </div>
+                        {% endif %}
+                    {% endfor %}
+            {% endfor %}
+        </div>
+
+
+        <div class="restmenu">
+            <h4>RESTAURANTS</h4>
+            {% for z in user %}
+            {% if z.restaurant.restaurant_name == 'Enter Your Restaurant name' %}
+            {% else %}
+                <div class="clickers">
+                    <a href="#{{z.restaurant.restaurant_name}}">{{z.restaurant.restaurant_name}}</a>
+                </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock menu %}

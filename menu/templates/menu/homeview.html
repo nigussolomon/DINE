@@ -1,0 +1,21 @@
+{% extends 'menu/home.html' %}
+
+{% block home %}
+<div class="homeview">
+    <h1>Browse through our Restaurants to see what they offer you</h1>
+    <div class="flexer">
+        {% for u in restaurants %}
+            {% if u.restaurant.restaurant_name == 'Enter Your Restaurant name' %}
+            {% else %}
+                <div class="profile" id="restview">
+                    <div class="details">
+                        <h3>{{u.restaurant.restaurant_name}}</a></h3>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <a href="{% url 'menu' %}" id="go">GO TO OUR MENU</a>
+</div>
+
+{% endblock home %}

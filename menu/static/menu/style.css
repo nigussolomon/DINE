@@ -84,3 +84,122 @@
     font-weight: 900;
     margin-left: 3%;
 }
+
+#addmenu{
+    top: 9%;
+}
+
+#menudisplay{
+    width: 50%;
+}
+
+#menudisplay h3{
+    font-size: 19px;
+}
+
+#menudisplay h3{
+    font-weight: 400;
+}
+
+#menudisplay h3 a{
+    font-weight: 600;
+}
+
+.resttitle{
+    width: 60%;
+    margin-top: 2%;
+    padding: 1%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-left: 3%;
+    font-weight: 900;
+    background: rgba(255, 0, 0, 0.582);
+    color: white;
+}
+
+.flexer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.homeview{
+    padding: 5%;
+    margin-top: 8%;
+}
+
+.homeview h1{
+    text-align: center;
+    font-weight: 900;
+    color: white;
+}
+
+#restview{
+    transition: all .2s,.3s ease-in-out;
+}
+
+#restview:hover{
+    transform: scale(1.04);
+}
+
+#go{
+    color: white;
+    background: red;
+    padding: 1%;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 900;
+    margin-left: 43%;
+    border: 2px solid rgba(255, 0, 0, 0);
+    transition: all .5s,.5s ease-in-out;
+
+
+}
+
+#go:hover{
+    border: 2px solid red;
+    background: transparent;
+    border-radius: 50px;
+}
+
+
+.restmenu{
+    position: sticky;
+    top: 2%;
+    margin-top: 2%;
+    height: 70vh;
+    left: 80%;
+    width: 15%;
+    background: rgba(255, 0, 0, 0.247);
+    border-radius: 5px;
+    box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.438);
+}
+
+.restmenu h4{
+    padding: 5%;
+    color: white;
+    font-weight: 900;
+}
+
+.clickers{
+    padding: 7%;
+}
+
+.clickers a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    background: rgba(255, 255, 255, 0.144);
+    padding: 3%;
+    border-radius: 4px;
+}
+
+.wrap{
+    display: flex;
+}
+
+.wrap1{
+    width: 80%;
+}

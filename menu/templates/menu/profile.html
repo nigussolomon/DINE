@@ -1,5 +1,6 @@
 {% extends 'menu/home.html' %}
 {% load crispy_forms_tags %}
+{% load static %}
 
 {% block profile %}
 <div class="profile">
@@ -13,6 +14,11 @@
     <div class="logoutButton">
         <a href="{% url 'home' %}">LOGOUT</a>
     </div>
+</div>
+
+<div class="options">
+    <a href="#" id="updateBtn">UPDATE PROFILE</a>
+    <a href="#" id="addrestaurant">ADD A RESTAURANT</a>
 </div>
 
 
@@ -29,4 +35,5 @@
 
     <p id="notify">Your profile is only seen by you and hidden from other users!</p>
 </div>
+
 {% endblock profile %}

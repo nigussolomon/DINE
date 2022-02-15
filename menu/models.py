@@ -19,7 +19,7 @@ class Restaurant(models.Model):
     phone_number = models.CharField(default = 'please add your number', validators=[phone_regex],max_length=17, blank= False)
 
     def __str__(self):
-        return f"{self.restarant_name}'s Restaurant"
+        return f"{self.user.username}'s Restaurant"
     
 class Menu(models.Model):
     restaurant= models.ForeignKey(Restaurant, on_delete=models.CASCADE)

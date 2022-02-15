@@ -18,8 +18,14 @@ class Restaurant(models.Model):
     restaurant_name = models.CharField(default= "Enter Your Restaurant name ", max_length= 40)
     phone_number = models.CharField(default = 'please add your number', validators=[phone_regex],max_length=17, blank= False)
 
-def __str__(self):
+    def __str__(self):
         return f"{self.restarant_name}'s Restaurant"
     
 class Menu(models.Model):
     restaurant= models.ForeignKey(Restaurant, on_delete=models.CASCADE)
+    food_name= models.CharField(max_length= 120)
+    food_ingridients = models.CharField(max_length = 300)
+    food_price = models.CharField(max_length= 20)
+    
+    def __str__(self):
+        return f"{self.food_name}"

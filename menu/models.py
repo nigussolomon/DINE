@@ -21,11 +21,3 @@ class Restaurant(models.Model):
     def __str__(self):
         return f"{self.restarant_name}'s Restaurant"
     
-class Menu(models.Model):
-    restaurant= models.ForeignKey(Restaurant, on_delete=models.CASCADE)
-    food_name= models.CharField(max_length= 120)
-    food_ingridients = models.CharField(max_length = 300)
-    food_price = models.CharField(max_length= 20)
-    
-    def __str__(self):
-        return f"{self.food_name}"

@@ -21,11 +21,6 @@ addBtn.onclick = () => {
 
 up.onclick = () =>{
     restaurant.style.top = "9%"
-    document.location.hash = 'form';
-}
-
-window.onload = () =>{
-    restaurant.style.top = "9%"
 }
 
 

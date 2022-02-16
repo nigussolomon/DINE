@@ -5,7 +5,7 @@
 {% block menuup %}
 <div class="register" id="addmenu">
     <form method="POST" enctype="multipart/form-data">
-        <h1>UPDATE YOUR PROFILE</h1>
+        <h1>ADD YOUR MENU</h1>
         {% csrf_token %}
         {{addform| crispy}}
         <div class="submitButton">
@@ -19,11 +19,11 @@
 <div class="addeditems">
     {% for food in food %}
     {% if food.restaurant.restaurant_name == user.restaurant.restaurant_name %}
-    <div class="profile">
+    <div class="profile" id = "menudisplay">
         <div class="details">
-            <h3>FOOD: <a href="#">{{food.food_name}}</a></h3>
-            <h3>INGREDIENTS: <a href="#">{{food.food_ingridients}}</a></h3>
-            <h3>PRICE: <a href="#">{{food.food_price}}</a></h3>
+            <h1><a href="#">{{food.food_name}}</a></h1>
+            <h3><a href="#">{{food.food_ingridients}}</a></h3>
+            <h4><a href="#">{{food.food_price}}</a></h4>
         </div>
     </div>
     {% endif %}

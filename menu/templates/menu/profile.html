@@ -10,9 +10,12 @@
         <h3>Username: <a href="#">@{{user.username}}</a></h3>
         <h3>Phone Number: <a href="#">{{user.profile.phone_number}}</a></h3>
         <h3>Address: <a href="#">{{user.profile.address}}</a></h3>
-        <h3><a href="#">Restaurant Details</a></h3>
-        <h3>{{user.restaurant.restaurant_name}}</h3>
-        <h3>{{user.restaurant.phone_number}}</h3>
+        {% if user.restaurant.restaurant_name ==  "" %} 
+        {% else %}
+            <h3><a href="#">Restaurant Details</a></h3>
+            <h3>{{user.restaurant.restaurant_name}}</h3>
+            <h3>{{user.restaurant.phone_number}}</h3>
+        {% endif %}
     </div>
     <div class="logoutButton">
         <a href="{% url 'home' %}">LOGOUT</a>
@@ -21,7 +24,11 @@
 
 <div class="options">
     <a href="#" id="updateBtn">UPDATE PROFILE</a>
-    <a href="#" id="addrestaurant">RESTAURANT</a>
+    {% if user.restaurant.restaurant_name == "" %}
+    <a href="#" id="addrestaurant">ADD A RESTAURANT</a>
+    {% else %}
+    <a href="#" id="addrestaurant">YOUR RESTAURANT</a>
+    {% endif %}
 </div>
 
 
@@ -46,7 +53,7 @@
         {{restaurant| crispy}}
         <div class="submitButton">
             <button type="submit" value="signup" id="up">UPDATE</button>
-            <a id = "gotomenu" href="{% url 'menuup' %}">GO TO MENU</a>
+            <a id = "gotomenu" href="{% url 'menuup' %}">ADD TO MENU</a>
         </div>
     </form>
 

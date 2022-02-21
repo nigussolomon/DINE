@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to DINE’s documentation! &mdash; DINE 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> DINE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to DINE’s documentation!</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#getting-started-with-dine">Getting started with DINE</a><ul>
+<li><a class="reference internal" href="#installing-needed-packages">Installing needed packages</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#running-dine">Running DINE</a><ul>
+<li><a class="reference internal" href="#running-without-a-container">Running without a container</a></li>
+<li><a class="reference internal" href="#running-with-a-container">Running with a container</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#views">Views</a><ul>
+<li><a class="reference internal" href="#main-module-views">main module views</a></li>
+<li><a class="reference internal" href="#menu-module-views">menu module views</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#urls">Urls</a><ul>
+<li><a class="reference internal" href="#main-app-urls">main app Urls</a></li>
+<li><a class="reference internal" href="#menu-app-urls">menu app Urls</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#models">Models</a></li>
+<li><a class="reference internal" href="#forms">Forms</a><ul>
+<li><a class="reference internal" href="#main-forms">main forms</a></li>
+<li><a class="reference internal" href="#menu-forms">menu forms</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">DINE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>Welcome to DINE’s documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="welcome-to-dine-s-documentation">
+<h1>Welcome to DINE’s documentation!<a class="headerlink" href="#welcome-to-dine-s-documentation" title="Permalink to this headline"></a></h1>
+<p>DINE is a web app that a user can simply login and browse thorugh restaurants or add their
+own restaurant and add their menus to let users browse and see what they offer.</p>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This project is under active development.</p>
+</div>
+</section>
+<section id="getting-started-with-dine">
+<h1>Getting started with DINE<a class="headerlink" href="#getting-started-with-dine" title="Permalink to this headline"></a></h1>
+<section id="installing-needed-packages">
+<h2>Installing needed packages<a class="headerlink" href="#installing-needed-packages" title="Permalink to this headline"></a></h2>
+<p>To use DINE, first install these packages</p>
+<p>On Windows</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install django
+<span class="gp">$</span> pip install django-crispy-forms
+</pre></div>
+</div>
+<p>On Mac and Linux</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip3 install django
+<span class="gp">$</span> pip3 install django-crispy-forms
+</pre></div>
+</div>
+</section>
+</section>
+<section id="running-dine">
+<h1>Running DINE<a class="headerlink" href="#running-dine" title="Permalink to this headline"></a></h1>
+<section id="running-without-a-container">
+<h2>Running without a container<a class="headerlink" href="#running-without-a-container" title="Permalink to this headline"></a></h2>
+<p>To start your local server use the following commands</p>
+<p>On Windows</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python manage.py runserver
+</pre></div>
+</div>
+<p>On Mac and Linux</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 manage.py runserver
+</pre></div>
+</div>
+<p>After you have started your local server just go to your browser and use the following url <a class="reference external" href="http://localhost:8000">http://localhost:8000</a></p>
+</section>
+<section id="running-with-a-container">
+<h2>Running with a container<a class="headerlink" href="#running-with-a-container" title="Permalink to this headline"></a></h2>
+<p>To build your image</p>
+<p>On Windows, Mac and Linux</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> docker build -t <span class="o">{</span>your_image_name<span class="o">}</span>
+</pre></div>
+</div>
+<p>To run the image you just build</p>
+<p>On Windows Mac and Linux</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> docker run -it -p <span class="m">8000</span>:8000 <span class="o">{</span>name_of_image_you_built<span class="o">}</span>
+</pre></div>
+</div>
+<p>After you have run your container just go to your browser and use the following url <a class="reference external" href="http://localhost:8000">http://localhost:8000</a></p>
+</section>
+</section>
+<section id="views">
+<h1>Views<a class="headerlink" href="#views" title="Permalink to this headline"></a></h1>
+<section id="main-module-views">
+<h2>main module views<a class="headerlink" href="#main-module-views" title="Permalink to this headline"></a></h2>
+<p>home view</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">def home(request):</span>
+<span class="go"> return render(request, &#39;main/home.html&#39;)</span>
+</pre></div>
+</div>
+<p>register view</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">def register(request):</span>
+<span class="go">   if request.method == &#39;POST&#39;:</span>
+<span class="go">      form = Registration(request.POST)</span>
+<span class="go">      if form.is_valid():</span>
+<span class="go">            form.save()</span>
+<span class="go">            form.cleaned_data</span>
+<span class="go">            return redirect(&#39;login&#39;)</span>
+<span class="go">   else:</span>
+<span class="go">      form= Registration()</span>
+<span class="go">      formLogin=AuthenticationForm()</span>
+<span class="go">   return render(request, &#39;main/register.html&#39;,{&#39;form&#39;:form})</span>
+</pre></div>
+</div>
+</section>
+<section id="menu-module-views">
+<h2>menu module views<a class="headerlink" href="#menu-module-views" title="Permalink to this headline"></a></h2>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">def home(request):</span>
+<span class="go">   context = {</span>
+<span class="go">      &#39;restaurants&#39;:User.objects.all()</span>
+<span class="go">   }</span>
+<span class="go">   return render (request, &#39;menu/homeview.html&#39;, context)</span>
+</pre></div>
+</div>
+<p>profile view</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">def profile(request):</span>
+<span class="go"> if request.method == &#39;POST&#39;:</span>
+<span class="go">     userUpdateForm = UpdateProfile(request.POST, instance= request.user)</span>
+<span class="go">     addContactInfo = AddContactInfo(request.POST, instance=request.user.profile)</span>
+<span class="go">     restaurantForm = RestaurantForm(request.POST, instance=request.user.restaurant)</span>
+
+
+<span class="go">     if userUpdateForm.is_valid() and addContactInfo.is_valid():</span>
+<span class="go">         userUpdateForm.save()</span>
+<span class="go">         addContactInfo.save()</span>
+<span class="go">         return redirect(&#39;profile&#39;)</span>
+
+<span class="go">     if restaurantForm.is_valid():</span>
+<span class="go">         restaurantForm.save()</span>
+<span class="go">         return redirect(&#39;profile&#39;)</span>
+
+<span class="go"> else:</span>
+<span class="go">     userUpdateForm = UpdateProfile(instance= request.user)</span>
+<span class="go">     addContactInfo = AddContactInfo(instance=request.user.profile)</span>
+<span class="go">     restaurantForm = RestaurantForm(instance = request.user.restaurant)</span>
+<span class="go"> return render(request, &#39;menu/profile.html&#39;, {&#39;userUpdate&#39;: userUpdateForm, &#39;addContact&#39;:addContactInfo, &#39;restaurant&#39;: restaurantForm} )</span>
+</pre></div>
+</div>
+<p>add to menu view</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">def add_to_menu(request):</span>
+<span class="go">   if request.method == &#39;POST&#39;:</span>
+<span class="go">      addForm = AddtoMenu(request.POST)</span>
+
+<span class="go">      if addForm.is_valid():</span>
+<span class="go">            addForm.instance.restaurant = request.user.restaurant</span>
+<span class="go">            addForm.save()</span>
+<span class="go">            return redirect(&#39;menuup&#39;)</span>
+<span class="go">   else:</span>
+<span class="go">      addForm = AddtoMenu(instance = request.user.restaurant)</span>
+
+<span class="go">   context = {</span>
+<span class="go">      &#39;food&#39; : Menu.objects.all(),</span>
+<span class="go">      &#39;addform&#39;:addForm</span>
+<span class="go">   }</span>
+<span class="go">   return render(request, &#39;menu/add_to_menu.html&#39;, context)</span>
+</pre></div>
+</div>
+<p>menu view</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">def menu(request):</span>
+<span class="go"> context = {</span>
+<span class="go">     &#39;food&#39; : Menu.objects.all(),</span>
+<span class="go">     &#39;user&#39; : User.objects.all(),</span>
+<span class="go"> }</span>
+<span class="go"> return render(request, &#39;menu/menu.html&#39;, context)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="urls">
+<h1>Urls<a class="headerlink" href="#urls" title="Permalink to this headline"></a></h1>
+<section id="main-app-urls">
+<h2>main app Urls<a class="headerlink" href="#main-app-urls" title="Permalink to this headline"></a></h2>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">urlpatterns = [</span>
+<span class="go">   path(&#39;&#39;,mainViews.home, name = &#39;home&#39; ),</span>
+<span class="go">   path(&#39;login/&#39;, auth_views.LoginView.as_view(template_name = &#39;main/login.html&#39;), name=&#39;login&#39;),</span>
+<span class="go">   path(&#39;signup/&#39;, mainViews.register, name=&#39;register&#39;),</span>
+<span class="go">   path(&#39;dine/&#39;, include(&#39;menu.urls&#39;))</span>
+<span class="go">]</span>
+</pre></div>
+</div>
+</section>
+<section id="menu-app-urls">
+<h2>menu app Urls<a class="headerlink" href="#menu-app-urls" title="Permalink to this headline"></a></h2>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">urlpatterns = [</span>
+<span class="go">   path(&#39;profile/&#39;, menuViews.profile, name=&quot;profile&quot;),</span>
+<span class="go">   path(&#39;menuup/&#39;, menuViews.add_to_menu, name=&quot;menuup&quot;),</span>
+<span class="go">   path(&#39;menu/&#39;, menuViews.menu, name=&quot;menu&quot;),</span>
+<span class="go">   path(&#39;home/&#39;, menuViews.home, name=&quot;homeview&quot;),</span>
+<span class="go">]</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="models">
+<h1>Models<a class="headerlink" href="#models" title="Permalink to this headline"></a></h1>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">class Profile(models.Model):</span>
+<span class="go">   user = models.OneToOneField(User, on_delete=models.CASCADE)</span>
+<span class="go">   phone_regex = RegexValidator(regex=r&#39;^\+?1?\d{9,15}$&#39;, message=&quot;Phone number must be entered in the format: &#39;+999999999&#39;. Up to 15 digits allowed.&quot;)</span>
+<span class="go">   phone_number = models.CharField(default = &#39;No registered Number&#39;,validators=[phone_regex], max_length=17, blank=True) # validators should be a list</span>
+<span class="go">   address = models.CharField(max_length=120, default=&#39;No registered address&#39;)</span>
+
+<span class="go">   def __str__(self):</span>
+<span class="go">      return f&quot;{self.user.username}&#39;s Profile&quot;</span>
+
+<span class="go">class Restaurant(models.Model):</span>
+<span class="go">   user = models.OneToOneField(User, on_delete=models.CASCADE)</span>
+<span class="go">   phone_regex = RegexValidator(regex= r&#39;^\+?1?\d{9,15}$&#39;, message = &quot;Phone number must be entered in the format: &#39;+999999999&#39; . Up to 15 digits allowed. &quot;)</span>
+<span class="go">   restaurant_name = models.CharField(default= &quot;&quot;, max_length= 40)</span>
+<span class="go">   phone_number = models.CharField(default = &quot;&quot;, validators=[phone_regex],max_length=17, blank= False)</span>
+
+<span class="go">   def __str__(self):</span>
+<span class="go">      return f&quot;{self.user.username}&#39;s Restaurant&quot;</span>
+
+<span class="go">class Menu(models.Model):</span>
+<span class="go">   restaurant= models.ForeignKey(Restaurant, on_delete=models.CASCADE)</span>
+<span class="go">   food_name= models.CharField(max_length= 120)</span>
+<span class="go">   food_ingridients = models.CharField(max_length = 300)</span>
+<span class="go">   food_price = models.CharField(max_length= 20)</span>
+
+<span class="go">   def __str__(self):</span>
+<span class="go">      return f&quot;{self.food_name}&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="forms">
+<h1>Forms<a class="headerlink" href="#forms" title="Permalink to this headline"></a></h1>
+<section id="main-forms">
+<h2>main forms<a class="headerlink" href="#main-forms" title="Permalink to this headline"></a></h2>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">class Registration(UserCreationForm):</span>
+<span class="go">   class Meta:</span>
+<span class="go">      model=User</span>
+<span class="go">      fields =[&#39;username&#39;,&#39;password1&#39;,&#39;password2&#39;]</span>
+</pre></div>
+</div>
+</section>
+<section id="menu-forms">
+<h2>menu forms<a class="headerlink" href="#menu-forms" title="Permalink to this headline"></a></h2>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">class UpdateProfile(ModelForm):</span>
+<span class="go">   class Meta:</span>
+<span class="go">      model = User</span>
+<span class="go">      fields = [&#39;username&#39;,]</span>
+
+<span class="go">class AddContactInfo(ModelForm):</span>
+<span class="go">   class Meta:</span>
+<span class="go">      model = Profile</span>
+<span class="go">      fields = [&#39;phone_number&#39;, &#39;address&#39;]</span>
+
+<span class="go">class RestaurantForm(ModelForm):</span>
+<span class="go">   class Meta:</span>
+<span class="go">      model = Restaurant</span>
+<span class="go">      fields = [&#39;restaurant_name&#39;, &#39;phone_number&#39;]</span>
+
+<span class="go">class AddtoMenu(ModelForm):</span>
+<span class="go">   class Meta:</span>
+<span class="go">      model = Menu</span>
+<span class="go">      fields = [&#39;food_name&#39;, &#39;food_ingridients&#39;, &#39;food_price&#39;]</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Nigus, Hawani, Hemen.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

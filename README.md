@@ -39,3 +39,24 @@ OR</br>
 <h6>python3 manage.py runserver</h6>
 <h4>Third</h4>
 Open your browser and enter the following url or simply click it: <a href="http://localhost:8000">http://localhost:8000</a>
+
+
+# DOCKERIZATION
+
+<h2>STEP1: CLONE THE REPO</h2>
+use the following command</br>
+
+git clone <a href="https://github.com/nigussolomon/DINE.git">https://github.com/nigussolomon/DINE.git</a></br>
+
+<h2>STEP2: BUILD AN IMAGE</h2>
+use the following command</br>
+first go into the directory of the cloned app</br>
+
+after you are in the directory continue with the following commands</br>
+command: docker build -t{image_name_of_your_choise} . </br>
+
+<h2>STEP3: RUN THE IMAGE</h2>
+use the following commands</br>
+make sure you are in the directory you cloned the app into</br>
+command: docker run -it -p 8000:8000 <name_of_image_you_built>
+

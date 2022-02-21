@@ -42,21 +42,21 @@ Open your browser and enter the following url or simply click it: <a href="http:
 
 
 # DOCKERIZATION
-
+</br>
 <h2>STEP1: CLONE THE REPO</h2>
 use the following command</br>
 
 git clone <a href="https://github.com/nigussolomon/DINE.git">https://github.com/nigussolomon/DINE.git</a></br>
-
+</br>
 <h2>STEP2: BUILD AN IMAGE</h2>
 use the following command</br>
 first go into the directory of the cloned app</br>
-
+</br>
 after you are in the directory continue with the following commands</br>
 command: docker build -t{image_name_of_your_choise} . </br>
-
+</br>
 <h2>STEP3: RUN THE IMAGE</h2>
 use the following commands</br>
 make sure you are in the directory you cloned the app into</br>
-command: docker run -it -p 8000:8000 <name_of_image_you_built>
+command: docker run -it -p 8000:8000 {name_of_image_you_built}
 
